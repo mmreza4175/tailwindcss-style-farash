@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>پرونده چی</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      @font-face {
+        font-family: "IRANSansX";
+        font-style: normal;
+        font-weight: bold;
+        src: url("/assets/fonts/IranSans/IRANSansX-Bold.woff") format("woff");
+      }
+      @font-face {
+        font-family: "IRANSansX";
+        font-style: normal;
+        font-weight: normal;
+        src: url("/assets/fonts/IranSans/IRANSansX-Regular.woff") format("woff");
+      }
+      body {
+        font-family: "IRANSansX", sans-serif !important;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f7f9fd] min-h-screen overflow-y-auto">
+    <div class="container mx-auto px-4 py-6 flex flex-col min-h-screen">
+      <!-- Hamburger Menu for Mobile -->
+      <div
+        class="hamburger md:hidden fixed top-5 right-5 z-50 cursor-pointer"
+        onclick="toggleSidebar()"
+      >
+        <span class="block h-1 w-8 bg-[#e9b076] rounded mb-1.5"></span>
+        <span class="block h-1 w-8 bg-[#e9b076] rounded mb-1.5"></span>
+        <span class="block h-1 w-8 bg-[#e9b076] rounded"></span>
+      </div>
+
+      <!-- Header -->
+      <header
+        class="bg-[#243674] text-white p-4 rounded-2xl shadow mb-6 hidden md:flex justify-between items-center"
+      >
+        <nav class="flex items-center gap-4">
+          <ul class="flex flex-col md:flex-row gap-4">
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-[#e9b076] px-4 border-l border-[#288fd2] md:border-l-0"
+                >درباره موسسه</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-[#e9b076] px-4 border-l border-[#288fd2] md:border-l-0"
+                >تماس با پشتیبانی</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-white hover:text-[#e9b076] px-4 border-l border-[#288fd2] md:border-l-0"
+                >ثبت تیکت</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white hover:text-[#e9b076] px-4"
+                >راهنما</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="flex items-center border border-white rounded-lg px-3 py-1">
+          <span>اعتبار حقوقی: 200</span>
+        </div>
+      </header>
+
+      <!-- Mobile Header -->
+      <header
+        class="mobile-header md:hidden bg-[#243674] text-white p-4 rounded-b-2xl shadow flex justify-center items-center sticky top-0 z-40"
+      >
+        <div class="flex items-center border border-white rounded-lg px-3 py-1">
+          <span class="text-sm">اعتبار حقوقی: 200</span>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="flex flex-col md:flex-row gap-6">
+        <!-- Sidebar -->
+        <aside
+          class="sidebar w-full md:w-1/4 bg-white shadow rounded-2xl p-6 fixed md:static top-0 right-[-100%] md:right-0 h-full md:h-[80vh] transition-all duration-500 ease-in-out z-40"
+          id="sidebar"
+        >
+          <div class="text-center mb-6">
+            <div
+              class="bg-[#e9b076] rounded-xl aspect-[3.65] mb-8 flex items-center justify-start p-4"
+            >
+              <img
+                src="https://via.placeholder.com/120"
+                alt="Profile Picture"
+                class="w-[120px] h-[120px] rounded-full border-4 border-white absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[-10%]"
+              />
+            </div>
+            <h2 class="text-2xl font-bold text-[#404040]">احسان نصوحی</h2>
+            <p class="text-[#757575] text-lg">کد پروانه: 6542421248</p>
+          </div>
+          <ul class="space-y-4">
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  ></path>
+                </svg>
+                داشبورد
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  ></path>
+                </svg>
+                ایجاد پرونده جدید
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                تاریخچه پرونده‌ها
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.144 2.537-2.747 2.81a4.02 4.02 0 00-2.253 1.69c-.344.574-.89 1.01-1.5 1.25"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 15h.01"
+                  ></path>
+                </svg>
+                سوالات دیگران
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
+                </svg>
+                تاریخچه پرداختی‌ها
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  ></path>
+                </svg>
+                اطلاعات حساب کاربری
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                  ></path>
+                </svg>
+                پیغام‌ها
+              </a>
+            </li>
+            <li class="sidebar-item mega-menu-parent">
+              <a
+                href="#"
+                class="flex items-center text-[#757575] hover:text-[#243674] hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-[#243674]"
+                onclick="toggleMegaMenu(event)"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  ></path>
+                </svg>
+                پرونده چی
+              </a>
+              <ul
+                class="mega-menu hidden bg-[#f9f9f9] rounded-xl border border-[#ddd] p-2 mt-2"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#757575] hover:bg-[#e9b076] hover:text-white p-2 rounded"
+                    >درباره ی برنامه</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#757575] hover:bg-[#e9b076] hover:text-white p-2 rounded"
+                    >تماس با پشتیبان</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#757575] hover:bg-[#e9b076] hover:text-white p-2 rounded"
+                    >ثبت تیکت</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block text-[#757575] hover:bg-[#e9b076] hover:text-white p-2 rounded"
+                    >راهنما</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="flex items-center text-red-600 hover:bg-[#f9fbff] p-2 rounded border-r-4 border-transparent hover:border-red-600"
+              >
+                <svg
+                  class="w-7 h-7 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                  ></path>
+                </svg>
+                خروج حساب کاربری
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Main Form -->
+        <section class="w-full md:w-3/4 bg-white shadow rounded-2xl p-6">
+          <h2
+            class="text-xl md:text-2xl font-medium text-[#5b5a5a] border-b border-[#c0c0c0] pb-2 mb-4"
+          >
+            پرونده جدید حقوقی شما
+          </h2>
+          <form class="space-y-4">
+            <div>
+              <label class="text-[#5b5a5a] text-lg">عنوان سوال/پرونده</label>
+              <input
+                type="text"
+                class="w-full border border-[#c0c0c0] rounded-lg p-2 mt-1 focus:outline-none focus:border-[#243674]"
+              />
+            </div>
+            <div>
+              <label class="text-[#5b5a5a] text-lg">شرح کامل پروژه</label>
+              <textarea
+                class="w-full border border-[#c0c0c0] rounded-lg p-2 mt-1 h-32 resize-none focus:outline-none focus:border-[#243674]"
+              ></textarea>
+            </div>
+            <div>
+              <label class="text-[#5b5a5a] text-lg">مدارک مربوط</label>
+              <div
+                class="custom-file flex items-center justify-center border-2 border-[#243674] rounded-lg p-3 mt-2 cursor-pointer text-[#243674]"
+              >
+                <svg
+                  class="w-6 h-6 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
+                  ></path>
+                </svg>
+                انتخاب فایل
+                <input type="file" class="file-documents hidden" />
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="w-full md:w-1/3">
+                <label class="text-[#5b5a5a] text-lg"
+                  >دسته‌بندی موضوع حقوقی</label
+                >
+                <select
+                  class="w-full border border-[#d4d4d4] rounded-lg p-3 mt-1 bg-[url('/assets/icon-svg/select-icon.svg')] bg-no-repeat bg-left-3 bg-[length:20px] focus:outline-none focus:border-[#243674]"
+                >
+                  <option disabled selected>
+                    دسته‌بندی حقوقی خود را انتخاب کنید
+                  </option>
+                  <option>گزینه 1</option>
+                  <option>گزینه 2</option>
+                </select>
+              </div>
+              <div class="w-full md:w-1/3">
+                <label class="text-[#5b5a5a] text-lg">سطح پیچیدگی</label>
+                <select
+                  class="w-full border border-[#d4d4d4] rounded-lg p-3 mt-1 bg-[url('/assets/icon-svg/select-icon.svg')] bg-no-repeat bg-left-3 bg-[length:20px] focus:outline-none focus:border-[#243674]"
+                >
+                  <option disabled selected>
+                    سطح پیچیدگی پرونده خود را انتخاب کنید
+                  </option>
+                  <option>گزینه 1</option>
+                  <option>گزینه 2</option>
+                </select>
+              </div>
+              <div class="w-full md:w-1/3">
+                <label class="text-[#5b5a5a] text-lg">فوریت پاسخ</label>
+                <select
+                  class="w-full border border-[#d4d4d4] rounded-lg p-3 mt-1 bg-[url('/assets/icon-svg/select-icon.svg')] bg-no-repeat bg-left-3 bg-[length:20px] focus:outline-none focus:border-[#243674]"
+                >
+                  <option disabled selected>
+                    فوریت پاسخ به پرونده خود را انتخاب کنید
+                  </option>
+                  <option>گزینه 1</option>
+                  <option>گزینه 2</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-4">
+              <button
+                type="submit"
+                class="bg-[#243674] text-white rounded-lg px-4 py-2 hover:bg-[#1e2e5e] transition"
+              >
+                ثبت پرونده
+              </button>
+              <span class="text-[#243674] text-sm"
+                >در صورت پیچیدگی پرونده، اعتبار بیشتری کسر خواهد شد</span
+              >
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        const hamburger = document.querySelector(".hamburger");
+        sidebar.classList.toggle("right-0");
+        sidebar.classList.toggle("opacity-100");
+        hamburger.classList.toggle("active");
+      }
+
+      function toggleMegaMenu(event) {
+        event.preventDefault();
+        const parent = event.currentTarget.parentElement;
+        parent.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سایت </title>
+  <link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- نوبار -->
+  <header class="bg-white shadow-sm">
+  <div class="container mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between h-16">
+    <a href="#" class="flex items-center gap-3 mb-4 md:mb-0">
+      <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center text-white font-bold">خ</div>
+      <span class="text-lg font-semibold">سایت خفن</span>
+    </a>
+    <nav class="flex flex-col md:flex-row gap-3 md:gap-6 text-center w-full md:w-auto">
+      <a href="#features" class="hover:text-teal-700">قابلیت‌ها</a>
+      <a href="#portfolio" class="hover:text-teal-700">نمونه‌کارها</a>
+      <a href="#pricing" class="hover:text-teal-700">قیمت</a>
+      <a href="#contact" class="hover:text-teal-700">تماس</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- هرو -->
+  <section class="container mx-auto px-6 lg:px-12 mt-12 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl font-extrabold leading-tight">
+<span class="text-teal-700">خوش آمدی به سایت</span> 
+      </h1>
+      <p class="mt-4 text-gray-600">عنواوین سایت </p>
+      <div class="mt-6 flex gap-3">
+        <a href="#pricing" class="px-5 py-3 bg-teal-700 text-white rounded-lg shadow">شروع کن</a>
+        <a href="#portfolio" class="px-5 py-3 border rounded-lg">دیدن نمونه‌کار</a>
+      </div>
+    </div>
+    <div>
+      <div class="rounded-2xl shadow-2xl overflow-hidden bg-gradient-to-br from-white to-gray-50 p-6">
+        <img src="styles/assets/img/resized_173868_291.jpg" alt="mockup" class="w-full rounded-lg object-cover h-72" />
+      </div>
+    </div>
+  </section>
+
+  <!-- قابلیت‌ها -->
+  <section id="features" class="container mx-auto px-6 lg:px-12 mt-16">
+    <h2 class="text-2xl font-semibold">قابلیت‌ها</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-6 bg-white rounded-xl shadow"><h3 class="font-semibold">⚡ سریع</h3></div>
+      <div class="p-6 bg-white rounded-xl shadow"><h3 class="font-semibold">📱 واکنش‌گرا</h3></div>
+      <div class="p-6 bg-white rounded-xl shadow"><h3 class="font-semibold">🎨 مدرن</h3></div>
+      <div class="p-6 bg-white rounded-xl shadow"><h3 class="font-semibold">🔧 سفارشی</h3></div>
+    </div>
+  </section>
+
+  <!-- نمونه‌کار -->
+  <section id="portfolio" class="container mx-auto px-6 lg:px-12 mt-16">
+    <h2 class="text-2xl font-semibold">نمونه‌کارها</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded-lg overflow-hidden shadow bg-white">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" class="w-full h-44 object-cover">
+        <div class="p-4">فروشگاه پوشاک</div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow bg-white">
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=800" class="w-full h-44 object-cover">
+        <div class="p-4">استودیو طراحی</div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow bg-white">
+        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=800" class="w-full h-44 object-cover">
+        <div class="p-4">وبلاگ شخصی</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قیمت -->
+  <section id="pricing" class="container mx-auto px-6 lg:px-12 mt-16">
+    <h2 class="text-2xl font-semibold">پلن‌ها</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="font-semibold">پایه</h3><p class="text-2xl mt-2">$99</p>
+      </div>
+      <div class="p-6 bg-teal-700 text-white rounded-xl shadow text-center">
+        <h3 class="font-semibold">پیشنهادی</h3><p class="text-2xl mt-2">$249</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow text-center">
+        <h3 class="font-semibold">حرفه‌ای</h3><p class="text-2xl mt-2">$499</p>
+      </div>
+    </div>
+  </section>
+
+  <!--تماس -->
+  <section id="contact" class="container mx-auto px-6 lg:px-12 mt-16 mb-24">
+    <div class="bg-white rounded-xl p-8 shadow">
+      <h3 class="text-xl font-semibold">تماس</h3>
+      <form class="mt-6 space-y-4">
+        <input type="text" placeholder="نام" class="w-full rounded border p-2" disabled >
+        <input type="email" placeholder="ایمیل" class="w-full rounded border p-2" disabled>
+        <textarea placeholder="پیام" rows="4" class="w-full rounded border p-2" disabled></textarea>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+    © 2025  سید محمدرضا موسوی
+  </footer>
+</body>
+</html>
