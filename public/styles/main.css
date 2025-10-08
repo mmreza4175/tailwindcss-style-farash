@@ -354,6 +354,9 @@
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
+  .mr-\[2rem\] {
+    margin-right: 2rem;
+  }
   .mr-\[4rem\] {
     margin-right: 4rem;
   }
@@ -401,6 +404,15 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
+  }
+  .ml-\[1rem\] {
+    margin-left: 1rem;
+  }
+  .ml-\[2rem\] {
+    margin-left: 2rem;
   }
   .block {
     display: block;
