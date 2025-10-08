@@ -1,2 +1,17 @@
 @import "tailwindcss";
 
+/* تعریف فونت باید بیرون از layer باشه */
+@font-face {
+  font-family: 'Yekan';
+  src: url('/styles/IRANYekanXVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* حالا با layer می‌تونی ازش استفاده عمومی بسازی */
+@layer base {
+  body {
+    font-family: 'Yekan', sans-serif;
+  }
+}

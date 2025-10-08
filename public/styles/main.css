@@ -548,6 +548,9 @@
   .items-center {
     align-items: center;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -845,6 +848,9 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .text-right {
     text-align: right;
   }
@@ -1084,34 +1090,14 @@
       outline-style: none;
     }
   }
-  .sm\:mr-4 {
-    @media (width >= 40rem) {
-      margin-right: calc(var(--spacing) * 4);
-    }
-  }
   .sm\:inline {
     @media (width >= 40rem) {
       display: inline;
     }
   }
-  .sm\:w-full {
-    @media (width >= 40rem) {
-      width: 100%;
-    }
-  }
-  .sm\:max-w-\[20rem\] {
-    @media (width >= 40rem) {
-      max-width: 20rem;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .sm\:px-0 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 0);
     }
   }
   .md\:static {
@@ -1237,6 +1223,18 @@
         --tw-space-x-reverse: 1;
       }
     }
+  }
+}
+@font-face {
+  font-family: 'Yekan';
+  src: url('/styles/IRANYekanXVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@layer base {
+  body {
+    font-family: 'Yekan', sans-serif;
   }
 }
 @property --tw-translate-x {
